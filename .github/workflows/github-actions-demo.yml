@@ -5,8 +5,10 @@ on:
         - main
       paths-ignore:
         - '.github/**'
-      schedule:
-        - cron: '15 6 * * 0'
+  pull_request:
+      branches: [ main ]
+  schedule:
+    - cron: '15 6 * * 0'
         
 jobs:
   Build:
